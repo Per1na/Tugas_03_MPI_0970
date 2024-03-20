@@ -32,8 +32,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
 
                 ) {
-                    GreetingText(message = "Happy Gradution, Dillon!",
-                        from = "From Jhonson"
+                    GreetingText(message = "Hi Dillon Carol Heatubun Bonay! How are you?",
+                        from = "From Sean"
                     )
                 }
             }
@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.Center,
-        modifier = modifier.padding(20.dp)
+        modifier = modifier.padding(0.dp)
     ) {
         Surface(
             modifier = Modifier.fillMaxWidth(),
@@ -53,16 +53,17 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
         ) {
             Text(
                 text = message,
-                fontSize = 70.sp,
+                fontSize = 65.sp,
                 lineHeight = 80.sp,
                 textAlign = TextAlign.Center,
                 fontStyle = FontStyle.Italic,
-                modifier = Modifier.padding(horizontal = 20.dp)
+                color = Color.White,
+                modifier = Modifier.padding(horizontal = 25.dp)
             )
         }
         Text(
             text = from,
-            fontSize = 30.sp,
+            fontSize = 40.sp,
             modifier = Modifier
                 .padding(20.dp)
                 .align(alignment = Alignment.End),
@@ -80,7 +81,7 @@ val Tosca = Color(0xFF00FFFF)
 @Composable
 fun GreetingPreview() {
     Tugas3Theme {
-        GreetingText(message = "Hi Dillon Carol Heatubun Bonay,How are you?",
+        GreetingText(message = "Hi Dillon Carol Heatubun Bonay! How are you?",
             from = "From Sean"
         )
     }
